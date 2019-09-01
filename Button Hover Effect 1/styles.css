@@ -14,8 +14,8 @@ a {
     border-radius: 100px;
     font-size: 30px;
     position: relative;
-    transition: all .5s;
     overflow: hidden;
+    letter-spacing: 2px;
 }
 
 a:before {
@@ -23,19 +23,15 @@ a:before {
     position: absolute;
     left: 0;
     top: 0;
-    background-color: #272727;
+    background-color: #fff200;
     height: 100%;
     width: 100%;
     z-index: -1;
-    transform: translateX(-100%);
-    /* left to right if X top to bottom if Y */
-    transition: all 1s;
+    transform-origin: bottom left;
+    transform: rotate(-90deg);
+    transition: transform 1s;
 }
 
 a:hover:before {
-    transform: translateX(0)
-}
-
-a:hover {
-    color: white;
+    transform: rotate(0deg);
 }

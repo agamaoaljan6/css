@@ -17,6 +17,7 @@ a {
     position: relative;
     transition: all .3s;
     overflow: hidden;
+    letter-spacing: 2px;
     
 }
 

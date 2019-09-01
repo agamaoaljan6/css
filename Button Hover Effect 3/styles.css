@@ -15,6 +15,7 @@ a {
     font-size: 30px;
     position: relative;
     transition: all 1s;
+    letter-spacing: 2px;
     /* overflow: hidden; */
 }
 
