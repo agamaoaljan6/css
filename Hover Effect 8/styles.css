@@ -10,52 +10,35 @@ a {
     text-decoration: none;
     background-color: #262626;
     font-family: sans-serif;
-    position: relative;
-    transition: all .3s;
-    overflow: hidden;
-    color: transparent;
+    font-size: 30px;
     border: 3px solid #262626;
     padding: 20px 60px;
     border-radius: 100px;
-    font-size: 30px;
+    position: relative;
+    transition: all .3s;
+    overflow: hidden;
+    
 }
 
 
 a:before {
     content: 'Hover Me';
-    background-color: purple;
-    color: #262626;
     position: absolute;
     left: 0;
     top: 0;
     height: 100%;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.5s;
-}
-
-a:after {
-    content: 'Hover Me';
     background-color: purple;
-    color: #262626;
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: scale(5);
+    opacity: 0;
     transition: all 0.5s;
-    transform: translate(-100%, 100%);
 }
 
 a:hover:before {
-    transform: translate(100%, -100%)
-}
-
-a:hover:after {
-    transform: translate(0, 0)
+    transform: scale(1);
+    opacity: 1;
 }
